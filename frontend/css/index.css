@@ -1,10 +1,12 @@
 *{
+  
   font-family: 'Times New Roman', Times, serif;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color:darkgray;
 }
 header,footer {
   background-color: #333;
@@ -52,10 +54,14 @@ footer{
 }
 .drp-dwn a{
   color:black;
-
 }
+.drp-dwn a:hover{
+  background-color: #6fecff;
+}
+
 main{
   height: 100%;
+
 }
 .image-back{
   background-image: url("../img/pic/backround.jpg");
@@ -134,3 +140,85 @@ marquee{
   }
 }
 
+.year-drop a{
+   margin-left: 150px;
+  margin-top: 5px;
+  margin-right: 100px;
+  padding-right: -100px; 
+
+
+}
+.year-ul{
+  /* background-color: blue; */
+  overflow: hidden;
+
+}
+.year-ul li{
+  margin-left: -150px;
+  margin-top: -5px;
+  margin-right: -100px;
+
+}
+.log-staff h2{
+  margin-left: 50px;
+
+}
+.snd-year{
+  margin-top: 50px;
+}
+.offcan{
+  background-color:darkgray;
+  height: 74vh;
+  margin-top: 68px;
+}
+.offf {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color:darkgray;
+}
+.login-container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.login-container h2 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color:darkgray;
+  /* background-color: #03b300; */
+
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #03b300;
+  /* background-color:darkgray; */
+}
+.year-ul a:hover{
+  background-color: #6fecff;
+
+}
