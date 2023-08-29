@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css".css">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <div class="admin-panel">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h1>Admin Panel</h1>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#dashboard" class="nav-link">Dashboard</a>
+        <a href="#year2" class="nav-link">2nd Year</a>
+        <a href="#year3" class="nav-link">3rd Year</a>
+        <a href="#year4" class="nav-link">Final Year</a>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="head-tg">
+      <div class="content-header">
+        <h1 style="color:white;">Welcome</h1>
+        <a href="index.html" class="logout">Logout</a>
+      </div>
+    </div>
+      <div class="year-content" id="dashboard">
+        <h2>Dashboard</h2>
+        <!-- Dashboard content here -->
+      </div>
+      <div class="year-content" id="year2">
+        <h2>2nd Year</h2>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>        
+      </div>
+      <div class="year-content" id="year3">
+        <h2>3rd Year</h2>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Gowthami</h2>
+          <p>A/P</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Ramya</h2>
+          <p>A/p</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Madhu</h2>
+          <p>A/P</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Sugana</h2>
+          <p>A/P</p>
+        </a>
+      </div>
+      <div class="year-content" id="year4">
+        <h2>Final Year</h2>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>
+        <br>
+        <a class="card" href="https://www.example.com/another-page">
+          <h2>Click Me!</h2>
+          <p>This card will redirect you to another page.</p>
+        </a>        
+        
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+    // JavaScript function to redirect to another page
+    function redirectToPage() {
+      window.location.href = 'https://www.example.com/another-page';
+    }
+  </script> -->
+</body>
+</html>
