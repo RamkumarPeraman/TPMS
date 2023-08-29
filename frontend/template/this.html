@@ -8,7 +8,52 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 <link rel="stylesheet" href="../css/index.css">
+<style>
 
+  .login-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .login-card {
+    display: none;
+    position: sticky;
+    position: -webkit-sticky; 
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-top: -700px;
+    margin-right: -900px;
+    margin-left: 400px;
+    z-index: 6;
+
+  
+  }
+
+  .login-card.active {
+    display: block;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
 <header>
@@ -20,14 +65,7 @@
   </div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li class="nav-item  dropdown">
-      <a style="color:white" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Login</a>
-      <ul  class="dropdown-menu drp-dwn">
-        <li><a style="font-weight: 500; " class="dropdown-item" href="#" id="openHOD"><bold>HOD</bold></a></li>
-        <li><li><a style="font-weight: 500;" class="dropdown-item" href="#" id="openStaff"><bold>STAFF</bold></a></li>
-    </li>
-      </ul>
-    </li>
+    <li>  <a href="#" class="login-button" id="loginButton">Login</a></li>
     <li><a href="#card-container">About</a></li>
 
   </ul>
@@ -113,32 +151,21 @@
 </div>
 
 
-
-<div class="offcanvas offcanvas-end offcan" tabindex="-1" id="hodOffcanvas">
-    <div class="offcanvas-header log-staff">
-        <h5 class="offcanvas-title"></h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body offf">
-        <div class="login-container">
-            <h2><strong>HOD Login</strong></h2>
-            <form onsubmit="return validateForm()">
-              <div class="form-group">
-                <label for="idOrEmail">ID or Email</label>
-                <input type="text" id="idOrEmail" name="idOrEmail" required>
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                <p id="passwordError" class="error"></p>
-              </div>
-              <button type="submit">Login</button>
-            </form>
+<div class="login-card" id="loginCard">
+  <span class="close-button" id="closeButton">&times;</span>
+        <form onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="idOrEmail">ID or Email</label>
+            <input type="text" id="idOrEmail" name="idOrEmail" required>
           </div>
-    </div>
-</div>
-
-
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <p id="passwordError" class="error"></p>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
 <footer class="bg-dark text-center text-white mt-auto"> 
   <!-- Grid container -->
     <!-- Section: Social media -->
@@ -177,6 +204,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 <script src="../js/index.js"></script>
+
+<script>
+  const loginButton = document.getElementById('loginButton');
+  const loginCard = document.getElementById('loginCard');
+  const closeButton = document.getElementById('closeButton');
+
+  loginButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginCard.classList.add('active');
+  });
+
+  closeButton.addEventListener('click', () => {
+    loginCard.classList.remove('active');
+  });
+</script>
 
 </body>
 </html>

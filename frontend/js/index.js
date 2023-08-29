@@ -1,14 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const staffLink = document.getElementById("openStaff");
-  const staffOffcanvas = new bootstrap.Offcanvas(document.getElementById("staffOffcanvas"));
+          // offcanvas 
 
-  staffLink.addEventListener("click", function(event) {
-      event.preventDefault();
-      staffOffcanvas.show();
-  });
-});
-
-  //  HOD
 document.addEventListener("DOMContentLoaded", function() {
   const hodLink = document.getElementById("openHOD");
   const hodOffcanvas = new bootstrap.Offcanvas(document.getElementById("hodOffcanvas"));
@@ -28,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
+           // login page 
 
 
 function validateForm() {
