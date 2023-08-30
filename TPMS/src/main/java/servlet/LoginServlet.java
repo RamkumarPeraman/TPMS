@@ -42,11 +42,11 @@ public class LoginServlet extends HttpServlet {
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
-                // Successful login, redirect to another page
-                response.sendRedirect("admin.html"); // Change to your desired page
+                response.sendRedirect("admin.html"); 
             } else {
+                // Generic error message
                 PrintWriter out = response.getWriter();
-                out.println("<p>Login failed. Please check your credentials.</p>");
+                out.println("<p>Login failed. Invalid username or password.</p>");
             }
 
             resultSet.close();
@@ -56,5 +56,6 @@ public class LoginServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }
