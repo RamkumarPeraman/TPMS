@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .bg-blank {
+            background-color: blanchedalmond;
+        }
+        /* Center the card and add margin */
+        .center-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            margin: 0 20px; /* Adjust the left and right margins as needed */
+            width:600px;
+        }
+        /* Style for Submit button */
+        .btn {
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            border: 1px solid #333333;
+            margin-left:460px;
+        }
+    </style>
+    <script>
+      let currentCard = 1;
+
+      function saveAndNext() {
+          document.getElementById(`card${currentCard}`).style.display = "none";
+          currentCard++;
+          document.getElementById(`card${currentCard}`).style.display = "block";
+      }
+  </script>
+</head>
+<body>
+  <div class="container mt-5 center-card">
+    <!-- Academic Achievements Card -->
+    <div class="card mb-4" id="card1">
+      <h5 class="card-header bg-blank">Academic Achievements</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Category</th>
+              <th>No. of Students</th>
+              <th>Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>CGPA - Above 9:</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	        <tbody>
+            <tr>
+              <td>2</td>
+              <td>CGPA - 8 to 9:</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	        <tbody>
+            <tr>
+              <td>3</td>
+              <td>CGPA - 7 to 8:</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	        <tbody>
+            <tr>
+              <td>4</td>
+              <td>Without Backlog:</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	        <tbody>
+            <tr>
+              <td>5</td>
+              <td>With Backlog:</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="btn" href="javascript:void(0);" onclick="saveAndNext(1);">Save & Next</a>
+      </div>
+    </div>
+    
+    <!-- Online Courses Card -->
+    <div class="card mb-4" id="card2" style="display:none;">
+      <h5 class="card-header bg-blank">Online Courses</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Category</th>
+              <th>No. of Students</th>
+              <th>Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Any Online Courses (NPTEL, Coursera, MATLAB, Edx, etc.):</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="btn" href="javascript:void(0);" onclick="saveAndNext(2);">Save & Next</a>
+      </div>
+    </div>
+    
+    <!-- No of slow learners improved Card -->
+    <div class="card mb-4" id="card3" style="display:none;">
+      <h5 class="card-header bg-blank">No of slow learners improved</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Category</th>
+              <th>No. of Students</th>
+              <th>Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Slow Learners Identified:</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>2</td>
+              <td>Arrear: 1: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>3</td>
+              <td>Arrear: 2: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>4</td>
+              <td>Arrear: >2: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>5</td>
+              <td>CGPA: <7: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="btn" href="javascript:void(0);" onclick="saveAndNext(3);">Save & Next</a>
+      </div>
+    </div>
+    
+    <!-- ENCOURAGING OUTSTANDING STUDENTS FOR PRODUCT DEVELOPMENT ACTIVITIES AND PAPER PUBLICATION Card -->
+    <div class="card mb-4" id="card4" style="display:none;">
+      <h5 class="card-header bg-blank">ENCOURAGING OUTSTANDING STUDENTS FOR PRODUCT DEVELOPMENT ACTIVITIES AND PAPER PUBLICATION</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Category</th>
+              <th>No. of Students</th>
+              <th>Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>No of Outstanding Students Identified</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>2</td>
+              <td>Scopus indexed journal: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>3</td>
+              <td>IEEE International conferences: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>4</td>
+              <td>SCI indexed journal: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="btn" href="javascript:void(0);" onclick="saveAndNext(4);">Save & Next</a>
+      </div>
+    </div>
+    
+    <!-- ENCOURAGING THE STUDENTS TO PARTICIPATE IN NATIONAL AND INTERNATIONAL EVENTS Card -->
+    <div class="card mb-4" id="card5" style="display:none;">
+      <h5 class="card-header bg-blank">ENCOURAGING THE STUDENTS TO PARTICIPATE IN NATIONAL AND INTERNATIONAL EVENTS</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Category</th>
+              <th>No. of Students</th>
+              <th>Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Students participation</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>2</td>
+              <td>Students achievements: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>3</td>
+              <td>Participation in other states: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>4</td>
+              <td>Participation in other countries: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>5</td>
+              <td>Technical contests like Hackathons: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="btn" href="javascript:void(0);" onclick="saveAndNext(5);">Save & Next</a>
+      </div>
+    </div>
+    
+    <!-- COMPETENCY TRAINING TOWARDS CAREER SETTLEMENT LIKE SKILL RACK, ETC. Card -->
+    <div class="card mb-4" id="card6" style="display:none;">
+      <h5 class="card-header bg-blank">COMPETENCY TRAINING TOWARDS CAREER SETTLEMENT LIKE SKILL RACK, ETC.</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Category</th>
+              <th>No. of Students</th>
+              <th>Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Internship @ Public sector undertakings</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>2</td>
+              <td>Internship @MNCs: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>3</td>
+              <td>Internship @Other private industries: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>4</td>
+              <td>Placement/career Training: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>5</td>
+              <td>Skillrack: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="btn" href="javascript:void(0);" onclick="saveAndNext(6);">Save & Next</a>
+      </div>
+    </div>
+    
+    <!-- CAREER SETTLEMENT Card -->
+    <div class="card mb-4" id="card7" style="display:none;">
+      <h5 class="card-header bg-blank">CAREER SETTLEMENT</h5>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Category</th>
+              <th>No. of Students</th>
+              <th>Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Placement</td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>2</td>
+              <td>Salary: Above 10 lakhs: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>3</td>
+              <td>Salary: 5 – 10 lakhs: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>4</td>
+              <td>Salary: 2 - 5 lakhs: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>5</td>
+              <td>Salary: Less than 2 lakhs: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>6</td>
+              <td>Placement @ Core companies: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>7</td>
+              <td>Placement @ Software companies: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>8</td>
+              <td>Company: Public sector undertakings: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>9</td>
+              <td>Company: MNCs: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>10</td>
+              <td>Company: Other private industries: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>11</td>
+              <td>Higher Education: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>12</td>
+              <td>Higher Education: CAT, MAT, GATE etc: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>13</td>
+              <td>Higher Education: TANCET: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>14</td>
+              <td>Level of Institute: Foreign Universities: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>15</td>
+              <td>IITs, NITs & IIMs: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>16</td>
+              <td>Govt./Govt. aided institutions: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>17</td>
+              <td>Reputed institutions: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+	  <tbody>
+            <tr>
+              <td>18</td>
+              <td>Entrepreneurship: </td>
+              <td><input type="text" class="form-control"></td>
+              <td><input type="text" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="btn" href="javascript:void(0);" onclick="saveAndNext(7);">Submit</a>
+      </div>
+    </div>
+
+    <!-- Add more cards for other sections here -->
+    
+  </div>
+  
+</body>
+</html>

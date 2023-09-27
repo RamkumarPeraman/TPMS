@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        .center-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            margin:0 20px; /* Adjust the left and right margins as needed */
+	    width:600px;
+        }
+	.btn{
+		text-decoration:none;
+		padding:0.5rem;
+		border:1px solid #333333;
+		margin-left:460px;
+	}
+    </style>
+</head>
+<body>
+    <!--content-->
+    <div class="container-sm test center-card">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questions</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Categories</th>
+                                    <th scope="col">No of Students</th>
+                                    <th scope="col">Target</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Slow Learners Improvement</td>
+                                    <td><input type="text" class="form-control" id="question1"></td>
+                                    <td><input type="text" class="form-control" id="target1"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Contest like (Hackathon, Project contest, coding contest, Project with fund etc.)</td>
+                                    <td><input type="text" class="form-control" id="question2"></td>
+                                    <td><input type="text" class="form-control" id="target2"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Outside State contest</td>
+                                    <td><input type="text" class="form-control" id="question3"></td>
+                                    <td><input type="text" class="form-control" id="target3"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Skillrack Target (No of programs solved)</td>
+                                    <td><input type="text" class="form-control" id="question4"></td>
+                                    <td><input type="text" class="form-control" id="target4"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+			    <a class="btn" href="#">
+      				Submit
+    			</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+</body>
+</html>

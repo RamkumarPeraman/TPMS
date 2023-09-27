@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        /* Center the card and add margin */
+        .center-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            margin: 0 20px; /* Adjust the left and right margins as needed */
+	    width:600px;
+        }
+        /* Style for Submit button */
+        .btn {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid #333333;
+	    margin-left:460px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>  
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ml">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+                        <li class="nav-item active">
+                            <a class="navbar-brand" href="#">
+                                <strong>NEC</strong>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Abouts</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Content Container -->
+    <div class="container-sm test center-card">
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- Card for Questions -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Questions</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">Categories</th>
+                                    <th scope="col">No of Students</th>
+                                    <th scope="col">Target</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Academic achievement</td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Online courses</td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Slow Learners Improvement</td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ensure Outstanding Students</td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="btn" href="#">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-auto">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Social Media Icons -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/neckvpt/" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <!-- Facebook Icon SVG Path -->
+                    </svg>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/i/flow/login?redirect_after_login=%2FNECKVP" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <!-- Twitter Icon SVG Path -->
+                    </svg>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/national_engineering_college/" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <!-- Instagram Icon SVG Path -->
+                    </svg>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/school/national-engineering-college/" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <!-- LinkedIn Icon SVG Path -->
+                    </svg>
+                </a>
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="#">National Engineering College</a>
+        </div>
+    </footer>
+</body>
+</html>
